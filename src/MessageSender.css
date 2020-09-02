@@ -42,9 +42,10 @@
 .messageSender__bottom {
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .messageSender__option {
+    align-items: center;
     display: flex;
     padding: 5px 15px;
 }

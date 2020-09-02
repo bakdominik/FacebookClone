@@ -8,12 +8,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import { useStateValue } from './StateProvider'
 
 
 function Sidebar() {
+    const [{ user },dispatch] = useStateValue();
     return (
         <div className='sidebar'>
-            <SidebarRow src='https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://iconic.com.pl/wp-content/uploads/2020/07/circle-cropped-300x300.png' title='Dominik Bąk' />
+            <SidebarRow src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={LocalHospitalIcon} title='COVID-19 Information Center'/>
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages'/>
             <SidebarRow Icon={PeopleIcon} title='Friends'/>
