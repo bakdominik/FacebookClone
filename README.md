@@ -1,10 +1,9 @@
 # Facebook Clone
 
-Checkout live version at facebook.dominikbak.com(https://facebook.dominikbak.com/)
+Checkout live version at https://facebook.dominikbak.com/
 
 ## Table of contents
-- [Facebook Clone](#facebook-clone)
-  - [Table of contents](#table-of-contents)
+
   - [General info](#general-info)
   - [Technologies](#technologies)
   - [Setup](#setup)
@@ -30,4 +29,4 @@ $ npm install
 $ npm start
 ```
 
-or chcekout live version(https://facebook.dominikbak.com/)
+or chcekout live version https://facebook.dominikbak.com/
